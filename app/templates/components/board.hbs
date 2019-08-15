@@ -1,0 +1,26 @@
+
+<div class="game-board">
+  <div>
+    First Name: {{input value=firstName}}
+  </div>
+  <div>
+    Last Name: {{input value=lastName}}
+  </div>
+  Full Name: {{fullName}}
+  <div>{{statusString}}</div>
+  <div class="board-row">
+    <Square @value={{squares.[0]}} @handleClick={{action "handleClick" 0}}/>
+    <Square @value={{squares.[1]}} @handleClick={{action "handleClick" 1}}/>
+    <Square @value={{squares.[2]}} @handleClick={{action "handleClick" 2}}/>
+  </div>
+  <div class="board-row">
+    <Square @value={{squares.[3]}} @handleClick={{action "handleClick" 3}}/>
+    <Square @value={{squares.[4]}} @handleClick={{action "handleClick" 4}}/>
+    <Square @value={{squares.[5]}} @handleClick={{action "handleClick" 5}}/>
+  </div>
+  <div class="board-row">
+    <Square @value={{squares.[6]}} @handleClick={{action "handleClick" 6}}/>
+    <Square @value={{squares.[7]}} @handleClick={{action "handleClick" 7}}/>
+    <Square @value={{squares.[8]}} @handleClick={{action "handleClick" 8}}/>
+  </div>
+</div>
